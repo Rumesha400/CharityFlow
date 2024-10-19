@@ -1,0 +1,93 @@
+/* Payment.css */
+.payment-container {
+  margin-top: 5%;
+  border-radius: 20px;
+  padding: 2% 2% 2% 2%;
+  margin-left: 26%;
+  max-width: 700px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 2%;
+}
+
+.campaign-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.amount-summary {
+  margin: 20px 0; /* Space above and below */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.amount-summary p {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between strong and text */
+  margin: 0; /* Remove default margin for p elements */
+}
+
+.amount-summary strong {
+  margin: 0; /* Ensure no margin */
+  padding-right: 10px; /* Optional: add some space between the strong and the amount */
+  flex-basis: auto; /* Allow it to take space based on content */
+}
+
+
+
+.payment-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.donation-amount, .donor-info, .tip-section {
+  margin-bottom: 20px;
+  margin-right: 2%;
+  padding: 5px;
+}
+
+.donation-amount label {
+  color: black;
+}
+
+.donor-info label {
+  padding: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Additional styles for improved layout */
+.donor-preferences {
+  margin-top: 20px;
+}
+
+.donor-preferences label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.payment-background {
+  background-color: rgba(206, 190, 170, 0.363);
+}

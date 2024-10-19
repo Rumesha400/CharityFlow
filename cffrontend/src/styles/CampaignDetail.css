@@ -1,0 +1,278 @@
+.charity-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 6%;
+  }
+  
+  .charity-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .charity-content {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .charity-image-container {
+    flex: 1;
+  }
+  
+  .charity-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .charity-details {
+    flex: 1;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #dbdfe672;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* horizontal offset, vertical offset, blur radius, color */
+  }
+
+  .charity-description {
+    margin-top: 2px;
+    padding: 5%;
+    background-color: #c5c2c2a5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+  }
+  
+  .charity-description h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    margin-left: 3%;
+  }
+  
+  .charity-description p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    justify-content: center;
+    margin-left: 3%;
+  }
+  
+  
+  
+  .organizer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .organizer-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #E5E7EB;
+    border-radius: 9999px;
+    margin-right: 0.75rem;
+  }
+  
+  .organizer-text {
+    font-size: 0.875rem;
+    color: #4B5563;
+  }
+  
+  .donation-protected {
+    display: inline-block;
+    background-color: #D1FAE5;
+    color: #065F46;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+  }
+  
+  .donation-progress {
+    margin-bottom: 1rem;
+  }
+  
+  .donation-amounts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .amount-raised {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .amount-goal {
+    color: #6B7280;
+    align-self: flex-end;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #E5E7EB;
+    border-radius: 9999px;
+    height: 0.625rem;
+  }
+  
+  .progress-bar-fill {
+    background-color: #10B981;
+    height: 0.625rem;
+    border-radius: 9999px;
+  }
+  
+  .donation-count {
+    font-size: 0.875rem;
+    color: #6B7280;
+    margin-bottom: 1rem;
+  }
+  
+  .campaign-detail-button {
+    width: 100%;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .share-button {
+    background-color: #FBBF24;
+    color: white;
+  }
+  
+  .share-button:hover {
+    background-color: #F59E0B;
+  }
+  
+  .donate-button {
+    background-color: #F97316;
+    color: white;
+  }
+  
+  .donate-button:hover {
+    background-color: #EA580C;
+  }
+  
+  .recent-donations {
+    display: flex;
+    align-items: center;
+    color: #7C3AED;
+    margin-bottom: 1rem;
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+  }
+  
+  .donation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .donation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .donor-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .donor-avatar {
+    width: 2rem;
+    height: 2rem;
+    background-color: #E5E7EB;
+    border-radius: 9999px;
+    margin-right: 0.5rem;
+  }
+  
+  .donor-name {
+    font-weight: 500;
+  }
+  
+  .donation-amount {
+    color: #6B7280;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .secondary-button {
+    flex: 1;
+    background-color: #F3F4F6;
+    color: #1F2937;
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+  
+  .secondary-button:last-child {
+    margin-right: 0;
+  }
+  
+  .secondary-button:hover {
+    background-color: #E5E7EB;
+  }
+
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .modal-content p {
+    margin-bottom: 1rem;
+  }
+  
+  .campaign-detail-button {
+    margin-top: 1rem; /* Spacing for buttons */
+  }
+
+  
+  .link-copied-text {
+    color: #41a473; /* Color for the text */
+    font-size: 0.9rem; /* Font size */
+    margin-top: 0.5rem; /* Spacing above the text */
+  }
+  
+  .copied-link-input {
+    width: 100%; /* Full width */
+    padding: 0.5rem; /* Padding */
+    margin-top: 0.5rem; /* Margin above */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+  }
+
+
+  
+  

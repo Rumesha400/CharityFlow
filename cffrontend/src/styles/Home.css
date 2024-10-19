@@ -1,0 +1,552 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .title {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .image-container {
+    background-image: url('https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .person {
+    position: relative;
+    margin: 50px;
+  }
+  
+  .person img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+/* Campaign_Home CSS */
+.campaign-home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 90px;
+  }
+  
+  .campaign-home-container header h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-causes {
+    padding: auto;
+  }
+
+  .filter-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-top: 8%;
+    margin-left: 34%;
+  }
+  
+  .filter-dropdown {
+    padding: 15px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-weight:bolder;
+  }
+
+  
+  .fundraiser-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .fundraiser-card {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .fundraiser-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .fundraiser-info {
+    padding: 16px;
+  }
+
+  .fundraiser-info h3:hover{
+    font-weight: bolder;
+  }
+  
+  .fundraiser-info h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  .fundraiser-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .cause-image-container {
+    position: relative; /* This allows absolute positioning of the donations count */
+  }
+  
+  .donations-count {
+    position: absolute;
+    top: 170px; /* Adjust as needed */
+    left: 5px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: Add a background for better visibility */
+    padding: 1px 10px; /* Optional: Add some padding */
+    border-radius: 5px; /* Optional: Rounded corners */
+    font-weight: bold; /* Optional: Make text bold */
+    z-index: 1; /* Ensure it's above the image */
+  }
+
+  
+
+
+/* Campaign_ProgressBar.CSS */
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0; /* Light gray background */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 10px; /* Adjust height as needed */
+  background-color: #76c7c0; /* Color for the progress */
+  transition: width 0.5s ease; /* Smooth transition */
+}
+
+
+
+/* ABOUT_HOME.css */
+.about-home-container {
+  background-color: #c269a927;
+  padding-top: 200px;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+.about-home-text {
+  max-width: 70%;
+  margin: 2 auto;
+  color: #06121d;
+}
+
+.about-home-text h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.about-home-text p {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.about-home-text a {
+  text-decoration: none;
+}
+
+.about-home-text a:hover {
+  text-decoration: underline;
+}
+
+
+/* WORKINGON_.css */
+.working-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.working-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.working-header h1 {
+  font-size: large;
+  text-align: center;
+}
+
+.learn-more {
+  background-color: #00b9a4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.video-container {
+  position: relative;
+  height: 400px;
+}
+
+.video-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play-button svg {
+  margin-right: 10px;
+}
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.video-modal-content {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  max-width: 1000px;
+  max-height: 600px;
+}
+
+.close-button {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .working-container {
+    padding: 20px;
+    padding-top: 8%;
+  }
+
+  .working-header {
+    flex-direction: column;
+  }
+
+  .learn-more {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .video-container {
+    height: 300px;
+  }
+
+  .video-modal-content {
+    width: 90%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .working-container {
+    padding: 15px;
+    padding-top: 7%;
+  }
+
+  .working-header h1 {
+    font-size: medium;
+  }
+
+  .video-container {
+    height: 250px;
+  }
+
+  .play-button {
+    padding: 8px 15px;
+  }
+
+  .play-button svg {
+    margin-right: 5px;
+  }
+
+  .video-modal-content {
+    width: 95%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .working-container {
+    padding: 10px;
+    padding-top: 5%;
+  }
+
+  .working-header h1 {
+    font-size: small;
+    text-align: center;
+  }
+
+  .video-container {
+    height: 200px;
+  }
+
+  .play-button {
+    padding: 6px 10px;
+  }
+
+  .video-modal-content {
+    width: 100%;
+    height: 45%;
+  }
+
+  .learn-more {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}
+
+
+
+/* CONTACT_US.css */
+.contact-us-block {
+  background-color: #c269a927;
+  color: black;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-us-content {
+  max-width: 32rem;
+  margin-left: 200px;
+}
+
+.contact-us-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.contact-us-content p {
+  font-size: 1.125rem;
+}
+
+.illustration {
+  position: relative;
+  width: 16rem;
+  height: 24rem;
+  margin-right: 15rem;
+}
+
+.envelope {
+  position: absolute;
+  top: 50;
+  width: 10rem;
+  height: 14rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  transform: rotate(-6deg);
+}
+
+.phone {
+  position: absolute;
+  top: 50;
+  left: 1rem;
+  width: 10rem;
+  height: 14rem;
+  background-color: #7b9a6ebc;
+  border-radius: 0.5rem;
+  transform: rotate(3deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Contact info.css */
+.contact-info-main {
+  background-color: #7b9a6e7f;
+}
+
+.contact-info {
+  max-width: 800px;
+  margin-left: 13.5%;
+  padding: 20 20 50 20 ;
+  line-height: 1.6;
+}
+
+.contact-info-address {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-email, .contact-info-phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #333;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.contact-info-icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+
+/* Email Sending. CSS */
+
+
+
+
+/* Contact_Us_Form_Email */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-group textarea {
+  min-height: 100px;
+}
+
+.submit-button {
+  background-color: #ad1457;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #880e4f;
+}

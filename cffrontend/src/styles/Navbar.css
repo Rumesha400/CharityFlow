@@ -1,0 +1,147 @@
+/* Importing Libre Baskerville Font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+nav {
+  position: fixed;
+  top: 20px;
+  left: 55px;
+  right: 55px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: background 300ms ease, color 300ms ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #63908d;
+  color: #000;
+}
+
+nav .logo {
+  text-decoration: none;
+  padding-left: 100px;
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(-45deg, #ff92c1, #edffa6, #ffa292, #92e8ff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 300ms ease;
+}
+
+/* Toggle Button for Small Screens */
+.toggle-button {
+  display: none;
+  background-color: #63908d;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 300ms ease;
+}
+
+.toggle-button:hover {
+  background-color: #63908d;
+}
+
+/* Hide the menu by default on small screens */
+.navbar-links {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  nav {
+    left: 20px;
+    right: 20px;
+  }
+
+  
+    /* Change button colors for small screens */
+  nav ul li a:hover {
+    background: #63908d;
+    color: white;
+  }
+
+  /* Hide nav links initially for small screens */
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 15px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  /* Show the menu when active */
+  .navbar-links.active {
+    display: flex;
+
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li a {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}
+
+

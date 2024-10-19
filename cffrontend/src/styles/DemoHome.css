@@ -1,0 +1,537 @@
+/* Importing Libre Baskerville Font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Libre Baskerville', serif;
+  scroll-behavior: smooth;
+
+}
+body
+{
+  overflow-x: hidden;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.banner
+{
+  position: relative;
+  margin-top: 5px;
+  width: 100%;
+  height: 100vh;
+  background: #b27541;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -55px;
+}
+.banner img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+.content
+{
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+}
+.content h2
+{
+  padding: 50px 0 0 0;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 0 0 50px #000000;
+}
+
+.content p
+{
+  color: #fff;
+  font-size: 18px;
+}
+
+
+
+.about a
+{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #000000;
+  border-radius: 20px;
+  max-width: 250px;
+  background: #e0e0e0;
+}
+
+.about
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  background: #000;
+  padding: 55px;
+}
+.about .contentBx
+{
+  background: #000;
+  width: 50%;
+  padding: 50px 70px 0 10px;
+}
+h2.heading
+{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p.text
+{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.about .imgBx
+{
+  background-size: cover;
+  background: url(../assets/images/about2.jpeg) center;
+  width: 50%;
+}
+
+.about .imgBx1
+{
+  background-size: cover;
+  background: url(../assets/images/about1.jpg) center;
+  width: 50%;
+}
+.idea {
+  background: #000;
+  padding: 100px;
+  text-align: center;
+}
+.idea .text
+{
+  text-align: left;
+  max-width: 800px;
+  margin-top: 25px;
+}
+.donation
+{
+  padding: 100px;
+  text-align: center;
+}
+.donation .heading
+{
+  padding-bottom: 15px;
+}
+.donation .background img
+{
+  position: absolute;
+  left: 0;
+  width: calc(100% + 200px);
+  height: 100vh;
+  margin-left: -100px;
+  margin-top: -100px;
+  padding-top: 55px;
+}
+.donation .container
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.donation .container .serviceBx
+{
+  position: relative;
+  background: #ffffff;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.donation .container .serviceBx img
+{
+  max-width: 256px;
+}
+.donation .container .serviceBx h2
+{
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.donation .container .serviceBx span
+{
+  position: absolute;
+  align-items: center;
+  bottom: 20px;
+}
+
+.donation-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+.donation-container .card
+{
+  position: relative;
+  min-width: 360px;
+  height: 440px;
+  border-radius: 15px;
+}
+.donation-container .card .box
+{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #000000;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgb(255, 255, 255, 0.3);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.donation-container .card:hover .box
+{
+  transform: translateY(-15px);
+  box-shadow: 0 0 40px rgba(122, 255, 0, 0.5);
+  background: #000;
+}
+.donation-container .card .box:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+  background: rgba(255,255,255,0.02);
+}
+.donation-container .card .box .content
+{
+  padding: 20px;
+  text-align: center;
+}
+.donation-container .card .box  h2
+{
+  position: absolute;
+  margin-top: -220px;
+  margin-left: 140px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+  transition: 0.4s ease;
+}
+.donation-container .card:hover .box h2
+{
+  margin-top: -320px;
+  margin-left: 140px;
+  position: absolute;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0);
+}
+.donation-container .card .box .content h3
+{
+  font-size: 1.8em;
+  color: #ffffff;
+  z-index: 1;
+  transition: 0.4s;
+}
+.donation-container .card .box .content img
+{
+  max-height: 130px;
+  transition: 0.4s ease-in-out;
+  margin-top: 75px;
+}
+.donation-container .card:hover .box .content img
+{
+  max-height: 135px;
+  transition: 0.4s;
+  margin-top: 0;
+}
+.donation-container .card:hover .box .content h3,
+.donation-container .card:hover .box .content p
+{
+  color: rgb(255, 255, 255);
+}
+.donation-container .card .box .content a
+{
+  position: relative;
+  display: inline-block;
+  padding: 8px 10px;
+  background: #ffffff;
+  margin-top: 40px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #000000;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: 0.4s;
+}
+.donation-container .card:hover .box .content a
+{
+  padding: 8px 60px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+}
+.donation-container .card:hover .box .content a:hover
+{
+  background: rgb(220, 255, 190);
+  background-size: 400% 400%;
+  animation: donate 1s ease infinite;
+  transition: background 300ms ease;
+}
+@keyframes donate {
+  0% {
+    background: rgb(255, 255, 255);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.85);
+  }
+  100% {
+    background: rgb(255, 255, 255);
+  }
+}
+
+
+
+.technology
+{
+  background: #000000;
+  width: 100%;
+  margin-top: -300px;
+  padding: 300px 100px 100px;
+  min-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.donation .contentBx
+{
+  text-align: left;
+  padding: 70px 0 0;
+  max-width: 800px;
+}
+.donation .imgBx img
+{
+  max-width: 50px;
+}
+.partners
+{
+  background: #000000;
+  padding: 100px 100px 50px 100px;
+  text-align: left;
+}
+.partners .text
+{
+  max-width: 800px;
+  padding-bottom: 50px;
+}
+.partners .imgBx
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partners .imgBx .ministrydefence img
+{
+  max-width: 200px;
+  margin: 20px;
+  opacity: 0.9;
+}
+.partners .imgBx .ministrydigital img
+{
+  max-width: 400px;
+  margin-left: 140px;
+  opacity: 0.9;
+  filter:  brightness(0) invert(1);
+}
+.partners .imgBx img:hover
+{
+  opacity: 1;
+}
+
+.feedbacks
+{
+  position: relative;
+  padding: 100px;
+  background: #000;
+  text-align: center;
+}
+.feedbacks .container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.feedbacks .container .contentBx
+{
+  background: #fff;
+  padding: 40px 50px 30px 50px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+.feedbacks .container .contentBx p
+{
+  font-style: italic;
+}
+.feedbacks .container .contentBx h3
+{
+  width: 100%;
+  text-align: end;
+  font-weight: 500;
+  color: #3f8ffc;
+}
+.contact a
+{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #000000;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.contact
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  background: #000;
+  padding: 55px;
+}
+.contact .contentBx
+{
+  background: #000;
+  width: 50%;
+  padding: 50px 70px 0 10px;
+}
+.feedback
+{
+  background: #ffffff;
+  padding: 60px 50px 0 50px;
+  width: 550px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-radius: 40px;
+  margin-left: 500px;
+}
+.form .inputBx
+{
+  margin-bottom: 40px;
+}
+.form .inputBx .send
+{
+  color: #000;
+}
+.form .inputBx input
+{
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+.form .inputBx button
+{
+background-color: #40d778;
+border-radius: 100px;
+box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+color: rgba(0, 0, 0, 0.71);
+cursor: pointer;
+display: inline-block;
+padding: 7px 35px;
+text-align: center;
+text-decoration: none;
+transition: all 250ms;
+border: 0;
+font-size: 16px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.form .inputBx button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.15)
+}
+
+.form .inputBx input::placeholder
+{
+  color: #000;
+}
+
+.form .inputBx textarea
+{
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 18px;
+  min-height: 150px;
+  font-weight: 300;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+.form .inputBx textarea::placeholder
+{
+  color: #000;
+}
+.form .inputBx input[type="submit"]
+{
+  width: 150px;
+  background: #000;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #111;
+  cursor: pointer;
+}
+
+
+
+
+

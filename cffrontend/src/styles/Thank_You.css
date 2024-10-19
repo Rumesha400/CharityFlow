@@ -1,0 +1,29 @@
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%; /* Adjust padding as needed */
+    text-align: center;
+  }
+  
+  .thank-you-message {
+    font-size: 36px;
+    color: #4caf50; /* You can change the color */
+  }
+  
+  .home-button {
+    margin-top: 20px; /* Space between message and button */
+    padding: 10px 20px;
+    background-color: #4caf50; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .home-button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+  }
+  
